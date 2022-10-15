@@ -4,13 +4,23 @@
     <title>Meeting Minutes</title>
     <meta name="description" content="Meeting Minutes" />
     <link rel="icon" href="./multimedia/favico/alien.ico" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!--Text Elements-->
     <header>
-      <h1>CSE 110 Group - Meeting Minutes</h1>
-      <h3>Final Project Discussion</h3>
+      <div class="upper">
+        <h1>CSE 110 Group - Meeting Minutes</h1>
+        <h3>Final Project Discussion</h3>
+      </div>
+
       <hr />
       <br />
     </header>
@@ -29,8 +39,8 @@
         <b>Group Leader: </b>Tyler Le<br />
         <b>Date: </b>Oct 4, 2022 <br />
         <b>Attendees: </b>Jane Smith, John Smith, Galileo<br />
-        <hr />
       </section>
+      <hr />
 
       <section id="agenda">
         <h2>Agenda</h2>
@@ -40,8 +50,8 @@
           <li>Check Ins</li>
           <li>Documentation.</li>
         </ol>
-        <hr />
       </section>
+      <hr />
 
       <section>
         <h2>Notes</h2>
@@ -61,7 +71,7 @@
         <img src="./multimedia/images/architecture.jpeg" alt="" />
       </section>
 
-      <section>
+      <section id="resources">
         <h2>Resources</h2>
 
         <!--Images and Multimedia-->
@@ -73,8 +83,8 @@
           <source src="./multimedia/video/rest_vid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <hr />
       </section>
+      <hr />
 
       <section id="misc">
         <h2>Misc</h2>
@@ -83,12 +93,12 @@
           <li>Compile error</li>
           <li>Unexpected seg fault</li>
         </ul>
-        <hr />
       </section>
+      <hr />
 
       <section>
         <h2>Attendance</h2>
-        <form>
+        <form class="attendance">
           <label>Input Your Name</label>
           <input type="text" />
           <br /><br />
@@ -113,19 +123,21 @@
             <option value="Management">Manager</option>
           </select>
           <br /><br />
-          <label>I Agree</label>
-          <input type="Checkbox" />
+          <div>
+            <label>I Agree</label>
+            <input type="Checkbox" />
+          </div>
           <br /><br />
           <button>Submit</button>
         </form>
-        <hr />
       </section>
+      <hr />
 
       <!--Form-->
       <form>
         <fieldset>
           <legend>Have You Watched The Video?</legend>
-          <b
+          <b style="text-decoration: underline"
             >If you have not watched the video, please do so by next meeting!</b
           >
           <input type="radio" id="option1" />

@@ -1,0 +1,172 @@
+/*
+Need to do flexbox
+Part 2: CSS Selectors
+*/
+
+
+body {
+    /* Global Changes */
+    background-color: lightgray;
+    padding: .5in;
+    display: inline-block;
+    margin: auto;
+    height: 100%;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+section {
+    margin: 10% 0%;
+}
+
+nav {
+    /* Align Nav Text In Center */
+    text-align: center;
+    word-spacing: 15vw;
+    position: sticky;
+    top: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-areas: "first second third";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px;
+
+}
+
+nav>a {
+    color: black;
+}
+
+nav a:first-child {
+    grid-area: "first";
+}
+
+nav a:nth-child(2) {
+    grid-area: "second";
+}
+
+nav a:last-child {
+    grid-area: "third";
+}
+
+header div {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+
+* section {
+    background-color: whitesmoke;
+    padding: 5px 10px;
+}
+
+#agenda li {
+    color: red;
+}
+
+#agenda h2 {
+    text-align: center;
+}
+
+h3 {
+    color: rgb(128, 128, 128);
+}
+
+.info h2 {
+    text-align: center;
+}
+
+summary+p {
+    font-weight: bold;
+}
+
+h2~p {
+    color: blue;
+}
+
+img {
+    border: solid;
+    border-width: 5px;
+    display: inline;
+}
+
+
+
+video {
+    display: inline;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    max-width: 760px;
+    max-height: 480px;
+}
+
+img, video {
+    max-width: 760px;
+}
+
+#misc li :first-child {
+    text-decoration: line-through;
+    color: red;
+}
+
+form {
+    background-color: #C4A484;
+    padding: 2cm;
+}
+
+footer {
+    position: static;
+}
+
+a[href$="#"] {
+    color: blue;
+}
+
+.attendance {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    flex-shrink: 2;
+}
+
+footer span {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+button:hover {
+    background-color: green;
+}
+
+a:active {
+    background-color: yellow;
+}
+
+footer div {
+    text-align: center;
+}
+
+@media (max-width: 1250px) {
+
+    /* … */
+    body {
+        background-color: grey;
+    }
+}
+
+h1.upper {
+    color: orange;
+}
